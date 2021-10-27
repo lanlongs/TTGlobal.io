@@ -512,6 +512,56 @@
         .imgs:hover {
             opacity: 0.7;
         }
+
+        .fix_c {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            /* flex-shrink: 1; */
+            /* flex-direction: column; */
+        }
+
+        .fix_c_1 {
+            background: khaki;
+            flex: 60%;
+            padding: 40px;
+            display: inline-block;
+            /* flex-grow: 8; */
+            cursor: pointer;
+        }
+
+        .fix_c_1:hover {
+            margin: 20px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .fix_c_1 h3,
+        h5 {
+            font-size: 1.5em;
+            color: lightcoral;
+        }
+
+        .fix_c_1 p {
+            color: lightsalmon;
+        }
+
+        .fix_c_2 {
+            display: inline-block;
+            background: lightcyan;
+            flex: 50%;
+            /* flex-shrink: 5; */
+            /* flex-grow: 2; */
+        }
+        .fix_inp{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fix_inp form input{
+            flex: 50%;
+        }
     </style>
     <script>
         var a = false;
@@ -551,7 +601,7 @@
     </script>
 </head>
 
-<body onresize="myFunction()">
+<body>
     <!-- <div style="position: absolute; top: 800px; z-index: -2; width: 100%; min-height: 300%; height: 100%; background: url(../index.jpg) no-repeat; background-size: 100% 100%; background-attachment:fixed; background-position:center;">
         
     </div> -->
@@ -784,6 +834,50 @@
 
     </div>
 
+    <div class="fix_c">
+        <div class="fix_c_1">
+            <h3>更新</h3>
+            <h5>内容更新到<版号>
+            </h5>
+            <p>当前版本更新</p>
+            <p>优化浏览视觉体验</p>
+            <p>增加底部免责声明</p>
+            <p>增加底部显示代码存放地</p>
+            <!-- <p>有好的建议以及有不好的意见都可以通过以下方式进行反馈，将在收到邮件的七个工作日给出答复</p> -->
+        </div>
+        <div class="fix_c_2">
+            <div
+                style="width: 100%; min-height: 320px; height: 100%; background: lightseagreen; color: mediumaquamarine; font-size: 2em;">
+                if (you===不接受更新){<br>quit;<br>}else<br>{<br>hello<br>}</div>
+        </div>
+        <div class="fix_c_2">
+            <div
+                style="width: 100%; min-height: 320px; height: 100%; background: lightseagreen; color: mediumaquamarine; font-size: 2em;">
+                print 'Hello World'</div>
+        </div>
+        <div class="fix_c_1">
+            <h3>更新</h3>
+            <h5>内容更新到<版号>
+            </h5>
+            <p>当前版本更新</p>
+            <p>优化浏览视觉体验</p>
+            <p>增加底部免责声明</p>
+            <p>增加底部显示代码存放地</p>
+            <!-- <p>有好的建议以及有不好的意见都可以通过以下方式进行反馈，将在收到邮件的七个工作日给出答复</p> -->
+            <!-- <div class="fix_inp">
+                <form action="">
+                    <p>
+                        <textarea name="" id="" cols="80" rows="7" placeholder="您的反馈能帮助我们很多，非常感谢您提交给我们的意见，它是拥有无穷力量的、可能您的一个微不足道的反馈能给我减少未来非常多的麻烦"></textarea>
+                    </p>
+                    <p>
+                        <input name="" id="">
+                        <input type="submit" value="提交表单">
+                    </p>
+                </form>
+            </div> -->
+        </div>
+    </div>
+
     <div class="fon">
         <div class="fon_t">
             <p style="padding-bottom: 10px; font-weight: bold;">责任与价值</p>
@@ -837,10 +931,10 @@
             </p>
         </div>
         <div class="fon_c" style="text-align: center;">
-          <img width="50" src="GitHub.png"/>
-          <h1>
-          代码托管于GitHub
-          </h1>
+            <img width="50" src="GitHub.png" />
+            <h1>
+                代码托管于GitHub
+            </h1>
         </div>
     </div>
 </body>
