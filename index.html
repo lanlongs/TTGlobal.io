@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT Global</title>
+    <style type="text/css">
+
+    </style>
+    <script>
+        // var myname = prompt("名字");
+        // var age = prompt("年龄");
+        // alert("欢迎您" + myname +"访问ttinc.\n" + "您的年龄为" + age);
+
+        // if(age <=18)
+        // {
+        //     alert("请自觉退出");
+        // }
+        // else if(age <=59)
+        // {
+        //     alert("可供访问");
+        // }
+        // else{
+        //     alert("不建议您访问");
+        // }
+        // var age = prompt("nl");
+        // // alert(parseFloat(age));
+        // // console.log(parseInt(age));
+        // var a = 2021 - age;
+        // alert("你今年" + a + "岁了");
+        // // console.log(typeof age);
+
+        // var a = prompt("1") , b = prompt("2");
+        // var c = parseInt(a) + parseInt(b);
+        // alert("值为" + c + "整型");
+
+        // var nane = prompt("请输入你的姓名"),age = prompt("请输入你的年龄"),x = prompt("请输入你的性别");
+        // alert('你的姓名为:' + nane + '\n你的年龄为:' + parseInt(age) + '\n你的性别为:' + x);
+
+
+        // var a = prompt("请输入密码");
+        // b = a == a.length;
+
+        // var name = prompt("输入你的姓名");
+        // if (name == '刘德华')
+        // {
+        //     alert("5元");
+        // }
+        // else
+        // {
+        //     alert("没有中奖哦");
+        // }
+
+        // var a = prompt("输入数字");
+        // if(a<=60 && a>=0)
+        // {
+        //     var b =  a < 10 ? 0+a : a;
+        //     console.log(b);
+        // }
+        // else
+        // {
+        //     alert("非法数据");
+        // }
+
+        // var b =  a < 10 ? 0+a : a;
+        // console.log(b);
+
+        // switch (0){
+        //     case 1:
+        //         alert("1");
+        //         break;
+        //     case 2:
+        //         alert("2");
+        //         break;
+        //     case 3:
+        //         alert("3");
+        //         break;
+        //     default:
+        //     alert("无匹配数据");
+        // }
+
+        // var a = prompt('需要些什么东西？');
+        // switch(a){
+        //     case '苹果':
+        //         alert('苹果的价格为：18元一斤');
+        //         break;
+        //     case '剪刀':
+        //         alert('剪刀的价格为：3元一把')
+        //         break;
+        //     case '打火机':
+        //         alert('打火机的价格为：2元一个');
+        //         break;
+        //     default:
+        //         alert('查无此物');
+        // }
+
+        // var a = prompt('现在几点了？');
+        // if(0<=a && 10>=a) {
+        //     alert('上午好！');
+        // } else if(11<=a && 13>=a){
+        //     alert('中午好！');
+        // } else if(14<=a && 24>=a){
+        //     alert('下午好！');
+        // } else{
+        //     alert('你好！');
+        // }
+
+        // var a = prompt('输入第一位数'),b = prompt('输入第二位数');
+        // var c = a > b ? a:b;
+        // alert(c); 
+
+        // var a = prompt('输入一位数字');
+        // var b = a%2 ==0 ? '是偶数':'是奇数';
+        // alert(b);
+
+        // var a = prompt('输入数字');
+        // var b = parseInt(a);
+        // switch (b) {
+        //     case 1:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 2:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 3:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 4:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 5:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 6:
+        //         alert('今天是周' + b);
+        //         break;
+        //     case 7:
+        //         alert('今天是周' + b);
+        //         break;
+        //     default:
+        //         alert('无效数据' + b)
+        // }
+
+        // var a = prompt('班长的钱');
+        // if(a>=2000){
+        //     alert('吃下西餐');
+        // }else if(a>=1600){
+        //     alert('随便吃点就好了');
+        // }else if(a>=1000 || 500<=a){
+        //     alert('超市买个泡面吧');
+        // }else{
+        //     alert('回家吧');
+        // }
+
+        // var a = prompt('输入你的分数');
+        // if(a>=90){
+        //     alert('非常不错');
+        // }else if(a>=80){
+        //     alert('还需努力');
+        // }else if(a>=70){
+        //     alert('多加加油');
+        // }else if(a>=60){
+        //     alert('手上的竹编掉地上了')
+        // }else{
+        //     alert('户口本少了一页了')
+        // }
+
+        // var a = prompt(''),b = prompt(''),c = prompt('');
+        // var d = a + b > c && a - b < c ? 'bcl':'cl';
+        // alert(d);
+
+    </script>
+    <!-- <style>
+        li:nth-child(1){
+            height: 40px;
+            width: 160px;
+            background: rgb(194, 126, 0);
+            font-size: 14px;
+            border: 1px solid #545432;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 3px;
+            color: rgb(255, 255, 255,0.2);
+        }
+        li:nth-child(2){
+            height: 40px;
+            width: 160px;
+            background: rgb(0, 161, 0);
+            font-size: 14px;
+            border: 1px solid #fff555;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 3px;
+            color: rgb(255, 255, 255,0.3);
+        }
+        li:nth-child(3){
+            height: 40px;
+            width: 160px;
+            background: rgb(0, 73, 156);
+            font-size: 14px;
+            border: 1px solid #f54434;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 3px;
+            color: rgb(255, 255, 255,0.5);
+        }
+        li:nth-child(4){
+            height: 40px;
+            width: 160px;
+            background: rgb(143, 0, 148);
+            font-size: 14px;
+            border: 1px solid rgb(182, 214, 0);
+            text-align: center;
+            line-height: 40px;
+            margin-top: 3px;
+            color: rgb(255, 255, 255,0.7);
+        }
+        li:nth-child(5){
+            height: 40px;
+            width: 160px;
+            background: rgb(146, 0, 44);
+            font-size: 14px;
+            border: 1px solid rgb(105, 0, 204);
+            text-align: center;
+            line-height: 40px;
+            margin-top: 3px;
+            color: rgb(255, 255, 255,0.8);
+        }
+    </style> -->
+
+    <style>
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(../index.jpg) no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../index.jpg) center 0 no-repeat;
+            background-size: cover;
+        }
+
+        .nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-backdrop-filter: blur(66px);
+            backdrop-filter: blur(66px);
+        }
+
+        .nav li {
+            font-size: 20px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            display: block;
+            padding: 16px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .nav li a:hover {
+            background: #888;
+            color: darkorange;
+            text-decoration: underline solid #fff;
+        }
+
+
+        .active {
+            background: #888;
+            color: darkorange;
+        }
+
+        .Language {
+            display: none;
+            position: absolute;
+            /* background-color: #f9f9f9; */
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .Language a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+        .lg:hover .Language {
+            display: block;
+        }
+
+        .top {
+            width: 100%;
+            /* background-color: bisque; */
+            /* background-image: linear-gradient(to right, #ffff9d, #beeb9f, #79bd8f); */
+            padding: 60px;
+            /* height: 160px; */
+            text-align: center;
+        }
+
+        .fix {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+            /* background: cornflowerblue; */
+        }
+
+        .fix2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .my1 {
+            /* margin: 60px; */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .my2 {
+            /* margin: 60px; */
+            flex: 60%;
+            background-color: white;
+            padding: 20px;
+            padding-top: 10px;
+            margin: 10px;
+        }
+
+        .my3 {
+            /* margin: 60px; */
+            flex: 30%;
+            /* background-color: rgba(0, 0, 0, 0.01); */
+            padding: 20px;
+            padding-top: 10px;
+            margin: 10px;
+        }
+
+
+        .my3 div {
+            box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: 0.4s;
+            border-radius: 40px;
+            text-align: center;
+            padding: 80px;
+            color: seashell;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+        }
+
+        .my3 div:hover {
+            transition: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        }
+
+        .my2 p {
+            padding-top: 10px;
+            /* line-height: 40px; */
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            margin: 20px;
+            font-weight: lighter;
+            text-indent: 5%;
+        }
+
+        .imgs {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .fon {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .fon_t {
+            flex: 40%;
+            /* background-color: #f1f1f1; */
+            /* background: rgba(0, 0, 0, 0.1); */
+            background-color: #f1f1f155;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .fon_c {
+            flex: 80%;
+            /* background-color: #f1f1f1; */
+            background: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .fix {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .top {
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .top p {
+                display: none;
+            }
+
+            .fon {
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .my3 {
+                /* margin: 60px; */
+                flex: 90%;
+                /* background-color: white; */
+                padding: 20px;
+                padding-top: 10px;
+                margin: 10px;
+            }
+        }
+
+        @media screen and (min-width:701px) {
+            .top div {
+                display: none;
+            }
+        }
+
+        .my2 div {
+            padding: 20px;
+            border-color: tomato;
+            /* text-align: center; */
+        }
+
+        .my2 div div {
+            text-align: center;
+            color: #324323;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 2mm;
+        }
+
+        .my2 div div div {
+            /* width: 80px;
+            height: 80px; */
+            width: 50px;
+            height: 50px;
+            /* background: rgb(64, 224, 208); */
+            border-radius: 255px;
+            cursor: pointer;
+        }
+
+        /* .my2 div div div:nth-child(1){
+            background: url(svg/android.svg) no-repeat;
+            background-size: 100% 100%;
+        } */
+        /* .my2 div div div:hover{
+            background: rgb(0, 0, 0,0.3);
+        } */
+
+        .bom li:hover {
+            transition: all 1s ease 0s;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .imgs:hover {
+            opacity: 0.7;
+        }
+    </style>
+    <script>
+        var a = false;
+        function fn() {
+            if (a) {
+                document.getElementById('ChildMenu').style.display = "none";
+                a = false;
+            }
+            else {
+                document.getElementById('ChildMenu').style.display = "block";
+                a = true;
+            }
+        }
+        function fn2() {
+            // document.getElementById('Z1').innerHTML = 'hahhahah';
+            document.getElementById('Z1').innerText = '主页';
+            document.getElementById('Z2').innerText = '演示';
+            document.getElementById('Z3').innerText = '关于';
+            document.getElementById('Z4').innerText = '设置';
+            document.getElementById('Z5').innerText = '语言';
+            document.getElementById('Z6').innerText = '天色暗了下来，乌云慢慢地笼罩着天空，下起了久违的雨';
+        }
+        function fn3() {
+            document.getElementById('Z1').innerText = 'Home page';
+            document.getElementById('Z2').innerText = 'Demo';
+            document.getElementById('Z3').innerText = 'About';
+            document.getElementById('Z4').innerText = 'Set up';
+            document.getElementById('Z5').innerText = 'Language';
+            document.getElementById('Z6').innerText = 'The sky darkened, dark clouds slowly covered the sky, and it rained for a long time';
+        }
+        // function myFunction() {
+        //     var w = window.outerWidth;
+        //     var h = window.outerHeight;
+        //     var txt = "" + w + "" + h;
+        //     document.getElementById("dede").innerHTML = txt;
+        // }
+    </script>
+</head>
+
+<body onresize="myFunction()">
+    <!-- <div style="position: absolute; top: 800px; z-index: -2; width: 100%; min-height: 300%; height: 100%; background: url(../index.jpg) no-repeat; background-size: 100% 100%; background-attachment:fixed; background-position:center;">
+        
+    </div> -->
+    <div>
+        <!--Main-->
+        <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518391&page=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+        <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518996&page=38"
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+        <div class="top">
+            <h1 style="display: inline-block;" id="dede">TT Inc</h1>
+            <p id="Z6">The sky darkened, dark clouds slowly covered the sky, and it rained for a long time</p>
+            <div onclick="fn()"
+                style="height: 35px; width: 35px; border-radius: 255px; background-color: rgb(138, 43, 226,0.1); float: right;">
+            </div>
+        </div>
+        <ul id="ChildMenu" class="nav" style="list-style-type: none;">
+            <li><a id="Z1" href="" class="active" style="text-decoration: overline solid #fff;">Home page</a></li>
+            <li><a id="Z2" href="">Demo</a></li>
+            <li><a id="Z3" href="#about">About</a></li>
+            <li><a id="Z4" href="">Set up</a></li>
+            <li class="lg">
+                <a id="Z5" href="">Language</a>
+                <div class="Language">
+                    <a href="#" onclick="fn2()">中文</a>
+                    <a href="#">藏文</a>
+                    <a href="#" onclick="fn3()">English</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="fix">
+            <div class="my2">
+                <h1>隐私保护</h1>
+                <h3>2021.10.23</h3>
+                <div class="imgs"
+                    style="background: url(OIP-C.jpg) no-repeat; background-size: 100% 100%; height: 220px;"></div>
+                <ol style="list-style-type: none;">
+                    <!-- <li>
+                        <div class="imgs" style="height: 200px;">img</div>
+                    </li> -->
+                    <li>
+                        <p>我们不会收集，利用您的数据 您的所有数据都只属于你</p>
+                    </li>
+                    <li>
+                        <p>利用我们开发的工具来保护您的敏感操作，从源头开始保护，除你之外当然也包括我，没有人会知道你做了什么</p>
+                    </li>
+                    <li>
+                        <p>个人信息主要包括以下类别：</p>
+                        <p>1.基本信息。为了完成大部分网络行为，消费者会根据服务商要求提交包括姓名、性别、年龄、身份证号码、电话号码、Email地址及家庭住址等在内的个人基本信息，有时甚至会包括婚姻、信仰、职业、工作单位、收入等相对隐私的个人基本信息。
+                        </p>
+                        <p>2. 设备信息。主要是指消费者所使用的各种计算机终端设备（包括移动和固定终端）的基本信息，如位置信息、Wifi列表信息、Mac地址、CPU信息、内存信息、SD卡信息、操作系统版本等。
+                        </p>
+                        <p>3. 账户信息。主要包括网银帐号、第三方支付帐号，社交帐号和重要邮箱帐号等。</p>
+                        <p>4. 隐私信息。主要包括通讯录信息、通话记录、短信记录、IM应用软件聊天记录、个人视频、照片等。</p>
+                        <p>5. 社会关系信息。这主要包括好友关系、家庭成员信息、工作单位信息等。</p>
+                        <p>6. 网络行为信息。主要是指上网行为记录，消费者在网络上的各种活动行为，如上网时间、上网地点、输入记录、聊天交友、网站访问行为、网络游戏行为等个人信息。</p>
+                    </li>
+                    <!-- <li>
+                        <p>资本主义社会里的民主是一种残缺不全的，贫乏和虚伪和民主，是只供富人，只供少数人享受的民主。</p>
+                    </li>
+                    <li>
+                        <p>全世界无产者和被压迫民族联合起来。</p>
+                    </li>
+                    <li>
+                        <p>浪费别人的时间等于是谋财害命，浪费自己的时间等于是慢性自杀。</p>
+                    </li>
+                    <li>
+                        <p>愿中国青年都摆脱冷气，只是向上走，<br>
+                            不必听自暴自弃者流的话。<br>
+                            能做事的做事，能发声的发声。<br>
+                            有一分热，发一分光。<br>
+                            就令萤火一般，也可以在黑暗里发一点光，<br>
+                            不必等候炬火。<br>
+                            ——鲁迅 《热风·随感录四十一》
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            一个农夫来到城市不懂交通规则 他不是蠢<br>
+                            他只是不太理解什么叫交通规则<br>
+                            一个城里人到乡下 分不清麦子和稻子 你也不能说他蠢<br>
+                            他只是不太理解<br>
+                            所以真的是希望各位<br>
+                            遇到跟自己观点不一样的<br>
+                            能够本着一颗求同存异的心<br>
+                            不要带着知识的优越感<br>
+                            说实话 当你去的地方越多<br>
+                            你就会走出这种地域的偏见<br>
+                            当你的书读的越多<br>
+                            你也会慢慢走出 这种时代的偏见 。
+                        </p>
+                    </li> -->
+                </ol>
+                <!-- svg#bba4ff -->
+                <div style="text-align: center;">
+                    <div>
+                        <div style="background: url(svg/apple.svg) no-repeat; background-size: 100% 100%;"></div>
+                        <h4>世界</h4>
+                    </div>
+                    <div>
+                        <div style="background: url(svg/chrome.svg) no-repeat; background-size: 100% 100%;"></div>
+                        <h4>世界</h4>
+                    </div>
+                    <div>
+                        <div style="background: url(svg/opera.svg) no-repeat; background-size: 100% 100%;"></div>
+                        <h4>世界</h4>
+                    </div>
+                    <div>
+                        <div style="background: url(svg/ie.svg) no-repeat; background-size: 100% 100%;"></div>
+                        <h4>世界</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="my1">
+                <p style="line-height: 35px;">
+                    I believe in the power of words
+                    <br>
+                    我相信言语的力量
+                    <br>
+                    I actually have seen a lot myself
+                    <br>
+                    我见过很多活生生的例子
+                    <br>
+                    I've seen people trying to kill themselves
+                    <br>
+                    我见过有人想要自杀
+                    <br>
+                    because of verbal abuse of parents
+                    <br>
+                    因为受到父母的言语辱骂
+                    <br>
+                    I've seen normal people do great things
+                    <br>
+                    我也见过平凡人做出非凡的成果
+                    <br>
+                    because they were encouraged
+                    <br>
+                    因为他们受到了鼓励
+                    <br>
+                    words that can make you or break you
+                    <br>
+                    语言可以成就你也可以摧垮你
+                    <br>
+                    They can heal your sou
+                    <br>
+                    它们可以治愈你的灵魂
+                    <br>
+                    they can damage you forever
+                    <br>
+                    也可以将你彻底摧毁
+                    <br>
+                    and they can take a person's lives
+                    <br>
+                    甚至可以夺走一个人的生命
+                    <br>
+                    Our words and beliefsdetermine our world
+                    <br>
+                    我们的言语和信仰决定我们的世界
+                    <br>
+                    Gandhi
+                    <br>
+                    甘地
+                    <br>
+                    once said
+                    <br>
+                    曾说
+                    <br>
+                    Your beliefs become your thoughts
+                    <br>
+                    你的信仰造就你的思想
+                    <br>
+                    Your thoughts become your words
+                    <br>
+                    你的思想成为你的言语
+                    <br>
+                    Your words become your actions
+                    <br>
+                    你的言语练就你的行动
+                    <br>
+                    Your actions become your habits
+                    <br>
+                    你的行为培养你的习惯
+                    <br>
+                    Your habits become your values
+                    <br>
+                    你的习惯成就你的价值
+                    <br>
+                    And your values
+                    <br>
+                    而你的价值
+                    <br>
+                    they become your destiny .
+                    <br>
+                    终成你的命运。
+                    <br>
+
+                </p>
+                <p style="margin-left: 180px;">——自杀求助热线</p>
+                <p style="margin-left: 180px;">——(800) 273-8255</p>
+            </div>
+            <!-- <div class="my1">
+                <p style="padding-bottom: 10px; font-weight: bold;">Responsibility and value</p>
+                <ul style="list-style-type: none;" class="bom">
+                    <li>Environmental protection</li>
+                    <li>non-profit organization</li>
+                    <li>Values</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div id="about" class="fix2">
+            <div class="my3">
+                <div class="imgs" style="background: url(index3.JPG) no-repeat; background-size: cover; height: 220px;">
+                    Admin</div>
+            </div>
+            <div class="my3">
+                <div class="imgs" style="background: url(vaja.JPG) no-repeat; background-size: cover; height: 220px;">
+                </div>
+            </div>
+            <div class="my3">
+                <div class="imgs"
+                    style="background: url(svg/share.gif) no-repeat; background-size: cover; height: 220px;"></div>
+            </div>
+            <div class="my3">
+                <div class="imgs"
+                    style="background: url(../index2.JPG) no-repeat; background-size: 100% 100%; height: 220px;">人因梦想而高飞
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fon">
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">责任与价值</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>环境保护</li>
+                <li>非营利组织</li>
+                <li>价值观</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">交流与反馈</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>社区</li>
+                <li>论坛</li>
+                <li>帮助</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">周边</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>商店</li>
+                <li>购买</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">隐私</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>Cookies</li>
+                <li>法律声明</li>
+                <li>请勿出售我的信息</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">支持我们</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>分享到社交平台</li>
+                <li>捐赠</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fon_c">
+            <p style="margin-left: 10px;">Copyright © 2021
+                <a style="text-decoration: none; color: lightgray;" href="login.html">
+                    TT Inc.</a>
+                保留所有权利。
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
