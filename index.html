@@ -359,6 +359,8 @@
             padding: 20px;
             padding-top: 10px;
             margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .my3 {
@@ -454,19 +456,61 @@
                 padding: 20px;
             }
 
+            .fix2 {
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px;
+                flex-direction: column;
+            }
+
             .my3 {
                 /* margin: 60px; */
-                flex: 90%;
+                flex: 100%;
                 /* background-color: white; */
-                padding: 20px;
+                /* padding: 20px;
                 padding-top: 10px;
-                margin: 10px;
+                margin: 10px; */
             }
+
+            .mmcc {
+                flex: 100%;
+                background: rgb(136, 90, 29);
+
+            }
+
+            .my2 {
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .fix_c {
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .fix_c_1 {
+                width: 100%;
+            }
+
         }
 
         @media screen and (min-width:701px) {
             .top div {
                 display: none;
+            }
+
+            .fix_c {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                /* flex-shrink: 1; */
+                /* flex-direction: column; */
             }
         }
 
@@ -495,14 +539,6 @@
             cursor: pointer;
         }
 
-        /* .my2 div div div:nth-child(1){
-            background: url(svg/android.svg) no-repeat;
-            background-size: 100% 100%;
-        } */
-        /* .my2 div div div:hover{
-            background: rgb(0, 0, 0,0.3);
-        } */
-
         .bom li:hover {
             transition: all 1s ease 0s;
             font-size: 20px;
@@ -513,15 +549,6 @@
             opacity: 0.7;
         }
 
-        .fix_c {
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            /* flex-shrink: 1; */
-            /* flex-direction: column; */
-        }
 
         .fix_c_1 {
             background: khaki;
@@ -530,12 +557,6 @@
             display: inline-block;
             /* flex-grow: 8; */
             cursor: pointer;
-        }
-
-        .fix_c_1:hover {
-            margin: 20px;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
         }
 
         .fix_c_1 h3,
@@ -548,19 +569,9 @@
             color: lightsalmon;
         }
 
-        .fix_c_2 {
-            display: inline-block;
-            background: lightcyan;
-            flex: 50%;
-            /* flex-shrink: 5; */
-            /* flex-grow: 2; */
-        }
-        .fix_inp{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .fix_inp form input{
-            flex: 50%;
+        .mmcc {
+            flex: 45%;
+            background: rgb(167, 167, 29);
         }
     </style>
     <script>
@@ -605,11 +616,30 @@
     <!-- <div style="position: absolute; top: 800px; z-index: -2; width: 100%; min-height: 300%; height: 100%; background: url(../index.jpg) no-repeat; background-size: 100% 100%; background-attachment:fixed; background-position:center;">
         
     </div> -->
-    <div>
-        <!--Main-->
-        <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518391&page=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
-        <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518996&page=38"
+    <!-- 
+        <div style="text-align: center;">
+            <div>
+                <div style="background: url(svg/apple.svg) no-repeat; background-size: 100% 100%;"></div>
+                <h4>世界</h4>
+            </div>
+            <div>
+                <div style="background: url(svg/chrome.svg) no-repeat; background-size: 100% 100%;"></div>
+                <h4>世界</h4>
+            </div>
+            <div>
+                <div style="background: url(svg/opera.svg) no-repeat; background-size: 100% 100%;"></div>
+                <h4>世界</h4>
+            </div>
+            <div>
+                <div style="background: url(svg/ie.svg) no-repeat; background-size: 100% 100%;"></div>
+                <h4>世界</h4>
+            </div>
+        </div> -->
+    <!--Main-->
+    <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518391&page=8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+    <!-- <iframe src="http://player.bilibili.com/player.html?aid=56979800&bvid=BV1ux411d75J&cid=99518996&page=38"
             scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+    <div>
         <div class="top">
             <h1 style="display: inline-block;" id="dede">TT Inc</h1>
             <p id="Z6">The sky darkened, dark clouds slowly covered the sky, and it rained for a long time</p>
@@ -632,184 +662,43 @@
             </li>
         </ul>
 
+
         <div class="fix">
+            <!-- svg#bba4ff -->
             <div class="my2">
-                <h1>隐私保护</h1>
-                <h3>2021.10.23</h3>
-                <div class="imgs"
-                    style="background: url(OIP-C.jpg) no-repeat; background-size: 100% 100%; height: 220px;"></div>
-                <ol style="list-style-type: none;">
-                    <!-- <li>
-                        <div class="imgs" style="height: 200px;">img</div>
-                    </li> -->
-                    <li>
-                        <p>我们不会收集，利用您的数据 您的所有数据都只属于你</p>
-                    </li>
-                    <li>
-                        <p>利用我们开发的工具来保护您的敏感操作，从源头开始保护，除你之外当然也包括我，没有人会知道你做了什么</p>
-                    </li>
-                    <li>
-                        <p>个人信息主要包括以下类别：</p>
-                        <p>1.基本信息。为了完成大部分网络行为，消费者会根据服务商要求提交包括姓名、性别、年龄、身份证号码、电话号码、Email地址及家庭住址等在内的个人基本信息，有时甚至会包括婚姻、信仰、职业、工作单位、收入等相对隐私的个人基本信息。
-                        </p>
-                        <p>2. 设备信息。主要是指消费者所使用的各种计算机终端设备（包括移动和固定终端）的基本信息，如位置信息、Wifi列表信息、Mac地址、CPU信息、内存信息、SD卡信息、操作系统版本等。
-                        </p>
-                        <p>3. 账户信息。主要包括网银帐号、第三方支付帐号，社交帐号和重要邮箱帐号等。</p>
-                        <p>4. 隐私信息。主要包括通讯录信息、通话记录、短信记录、IM应用软件聊天记录、个人视频、照片等。</p>
-                        <p>5. 社会关系信息。这主要包括好友关系、家庭成员信息、工作单位信息等。</p>
-                        <p>6. 网络行为信息。主要是指上网行为记录，消费者在网络上的各种活动行为，如上网时间、上网地点、输入记录、聊天交友、网站访问行为、网络游戏行为等个人信息。</p>
-                    </li>
-                    <!-- <li>
-                        <p>资本主义社会里的民主是一种残缺不全的，贫乏和虚伪和民主，是只供富人，只供少数人享受的民主。</p>
-                    </li>
-                    <li>
-                        <p>全世界无产者和被压迫民族联合起来。</p>
-                    </li>
-                    <li>
-                        <p>浪费别人的时间等于是谋财害命，浪费自己的时间等于是慢性自杀。</p>
-                    </li>
-                    <li>
-                        <p>愿中国青年都摆脱冷气，只是向上走，<br>
-                            不必听自暴自弃者流的话。<br>
-                            能做事的做事，能发声的发声。<br>
-                            有一分热，发一分光。<br>
-                            就令萤火一般，也可以在黑暗里发一点光，<br>
-                            不必等候炬火。<br>
-                            ——鲁迅 《热风·随感录四十一》
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            一个农夫来到城市不懂交通规则 他不是蠢<br>
-                            他只是不太理解什么叫交通规则<br>
-                            一个城里人到乡下 分不清麦子和稻子 你也不能说他蠢<br>
-                            他只是不太理解<br>
-                            所以真的是希望各位<br>
-                            遇到跟自己观点不一样的<br>
-                            能够本着一颗求同存异的心<br>
-                            不要带着知识的优越感<br>
-                            说实话 当你去的地方越多<br>
-                            你就会走出这种地域的偏见<br>
-                            当你的书读的越多<br>
-                            你也会慢慢走出 这种时代的偏见 。
-                        </p>
-                    </li> -->
-                </ol>
-                <!-- svg#bba4ff -->
-                <div style="text-align: center;">
-                    <div>
-                        <div style="background: url(svg/apple.svg) no-repeat; background-size: 100% 100%;"></div>
-                        <h4>世界</h4>
-                    </div>
-                    <div>
-                        <div style="background: url(svg/chrome.svg) no-repeat; background-size: 100% 100%;"></div>
-                        <h4>世界</h4>
-                    </div>
-                    <div>
-                        <div style="background: url(svg/opera.svg) no-repeat; background-size: 100% 100%;"></div>
-                        <h4>世界</h4>
-                    </div>
-                    <div>
-                        <div style="background: url(svg/ie.svg) no-repeat; background-size: 100% 100%;"></div>
-                        <h4>世界</h4>
+                <div class="mmcc">
+                    <div style="text-align: left;">
+                        <h1>产品介绍</h1>
+                        <h3>详细内容</h3>
+                        <span>12312</span>
                     </div>
                 </div>
+                <div class="mmcc">
+                    anquan
+                </div>
             </div>
-            <div class="my1">
-                <p style="line-height: 35px;">
-                    I believe in the power of words
-                    <br>
-                    我相信言语的力量
-                    <br>
-                    I actually have seen a lot myself
-                    <br>
-                    我见过很多活生生的例子
-                    <br>
-                    I've seen people trying to kill themselves
-                    <br>
-                    我见过有人想要自杀
-                    <br>
-                    because of verbal abuse of parents
-                    <br>
-                    因为受到父母的言语辱骂
-                    <br>
-                    I've seen normal people do great things
-                    <br>
-                    我也见过平凡人做出非凡的成果
-                    <br>
-                    because they were encouraged
-                    <br>
-                    因为他们受到了鼓励
-                    <br>
-                    words that can make you or break you
-                    <br>
-                    语言可以成就你也可以摧垮你
-                    <br>
-                    They can heal your sou
-                    <br>
-                    它们可以治愈你的灵魂
-                    <br>
-                    they can damage you forever
-                    <br>
-                    也可以将你彻底摧毁
-                    <br>
-                    and they can take a person's lives
-                    <br>
-                    甚至可以夺走一个人的生命
-                    <br>
-                    Our words and beliefsdetermine our world
-                    <br>
-                    我们的言语和信仰决定我们的世界
-                    <br>
-                    Gandhi
-                    <br>
-                    甘地
-                    <br>
-                    once said
-                    <br>
-                    曾说
-                    <br>
-                    Your beliefs become your thoughts
-                    <br>
-                    你的信仰造就你的思想
-                    <br>
-                    Your thoughts become your words
-                    <br>
-                    你的思想成为你的言语
-                    <br>
-                    Your words become your actions
-                    <br>
-                    你的言语练就你的行动
-                    <br>
-                    Your actions become your habits
-                    <br>
-                    你的行为培养你的习惯
-                    <br>
-                    Your habits become your values
-                    <br>
-                    你的习惯成就你的价值
-                    <br>
-                    And your values
-                    <br>
-                    而你的价值
-                    <br>
-                    they become your destiny .
-                    <br>
-                    终成你的命运。
-                    <br>
-
-                </p>
-                <p style="margin-left: 180px;">——自杀求助热线</p>
-                <p style="margin-left: 180px;">——(800) 273-8255</p>
+            <div class="my2" style="display: flex; flex-wrap: wrap;">
+                <div>
+                    <dl>
+                        <dt>服务器获取内容</dt>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt>服务器获取内容</dt>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                        <dd>数据内容</dd>
+                    </dl>
+                </div>
             </div>
-            <!-- <div class="my1">
-                <p style="padding-bottom: 10px; font-weight: bold;">Responsibility and value</p>
-                <ul style="list-style-type: none;" class="bom">
-                    <li>Environmental protection</li>
-                    <li>non-profit organization</li>
-                    <li>Values</li>
-                </ul>
-            </div> -->
         </div>
 
         <div id="about" class="fix2">
@@ -823,11 +712,13 @@
             </div>
             <div class="my3">
                 <div class="imgs"
-                    style="background: url(svg/share.gif) no-repeat; background-size: cover; height: 220px;"></div>
+                    style="background: url(svg/share.gif) no-repeat; background-size: cover; height: 220px;">
+                </div>
             </div>
             <div class="my3">
                 <div class="imgs"
-                    style="background: url(index2.JPG) no-repeat; background-size: 100% 100%; height: 220px;">人因梦想而高飞
+                    style="background: url(index2.JPG) no-repeat; background-size: 100% 100%; height: 220px;">
+                    人因梦想而高飞
                 </div>
             </div>
         </div>
@@ -836,45 +727,18 @@
 
     <div class="fix_c">
         <div class="fix_c_1">
-            <h3>更新</h3>
-            <h5>内容更新到<版号>
+            <h3>当前版本更新</h3>
+            <h5>内容更新到<1.0.0.5>
             </h5>
-            <p>当前版本更新</p>
+            <p>当前版本更新以下</p>
             <p>优化浏览视觉体验</p>
-            <p>增加底部免责声明</p>
-            <p>增加底部显示代码存放地</p>
+            <p>取消了首页文章</p>
+            <p>首页文章修改为产品介绍</p>
+            <p>增加了数据获取功能（现在还是处于静态模式）</p>
+            <p>修改了图片展示以及更新介绍 处于移动端展示更大的视觉效果</p>
+            <!-- <p>增加底部免责声明</p>
+            <p>增加底部显示代码存放地</p> -->
             <!-- <p>有好的建议以及有不好的意见都可以通过以下方式进行反馈，将在收到邮件的七个工作日给出答复</p> -->
-        </div>
-        <div class="fix_c_2">
-            <div
-                style="width: 100%; min-height: 320px; height: 100%; background: lightseagreen; color: mediumaquamarine; font-size: 2em;">
-                if (you===不接受更新){<br>quit;<br>}else<br>{<br>hello<br>}</div>
-        </div>
-        <div class="fix_c_2">
-            <div
-                style="width: 100%; min-height: 320px; height: 100%; background: lightseagreen; color: mediumaquamarine; font-size: 2em;">
-                print 'Hello World'</div>
-        </div>
-        <div class="fix_c_1">
-            <h3>更新</h3>
-            <h5>内容更新到<版号>
-            </h5>
-            <p>当前版本更新</p>
-            <p>优化浏览视觉体验</p>
-            <p>增加底部免责声明</p>
-            <p>增加底部显示代码存放地</p>
-            <!-- <p>有好的建议以及有不好的意见都可以通过以下方式进行反馈，将在收到邮件的七个工作日给出答复</p> -->
-            <!-- <div class="fix_inp">
-                <form action="">
-                    <p>
-                        <textarea name="" id="" cols="80" rows="7" placeholder="您的反馈能帮助我们很多，非常感谢您提交给我们的意见，它是拥有无穷力量的、可能您的一个微不足道的反馈能给我减少未来非常多的麻烦"></textarea>
-                    </p>
-                    <p>
-                        <input name="" id="">
-                        <input type="submit" value="提交表单">
-                    </p>
-                </form>
-            </div> -->
         </div>
     </div>
 
