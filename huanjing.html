@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环境责任</title>
+    <style type="text/css">
+
+    </style>
+
+    <style>
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(index.jpg) no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(index.jpg) center 0 no-repeat;
+            background-size: cover;
+        }
+
+        .nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-backdrop-filter: blur(66px);
+            backdrop-filter: blur(66px);
+            z-index: 10;
+        }
+
+        .nav li {
+            font-size: 20px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            display: block;
+            padding: 16px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .nav li a:hover {
+            background: #888;
+            color: darkorange;
+            text-decoration: underline solid #fff;
+        }
+
+
+        .active {
+            background: #888;
+            color: darkorange;
+        }
+
+        .Language {
+            display: none;
+            position: absolute;
+            /* background-color: #f9f9f9; */
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .Language a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+        .lg:hover .Language {
+            display: block;
+        }
+
+        .top {
+            width: 100%;
+            /* background-color: bisque; */
+            /* background-image: linear-gradient(to right, #ffff9d, #beeb9f, #79bd8f); */
+            padding: 60px;
+            /* height: 160px; */
+            text-align: center;
+        }
+
+        .fix {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+            /* background: cornflowerblue; */
+        }
+
+        .my1 {
+            /* margin: 60px; */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .my2 {
+            /* margin: 60px; */
+            flex: 60%;
+            background-color: white;
+            padding: 20px;
+            padding-top: 10px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .my3 {
+            /* margin: 60px; */
+            flex: 30%;
+            /* background-color: rgba(0, 0, 0, 0.01); */
+            padding: 20px;
+            padding-top: 10px;
+            margin: 10px;
+        }
+
+
+        .my3 div {
+            box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: 0.4s;
+            border-radius: 40px;
+            text-align: center;
+            padding: 80px;
+            color: seashell;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+        }
+
+        .my3 div:hover {
+            transition: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        }
+
+        .my2 p {
+            padding-top: 10px;
+            /* line-height: 40px; */
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            margin: 20px;
+            font-weight: lighter;
+            text-indent: 5%;
+        }
+
+        .imgs {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .fon {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .fon a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .fon_t {
+            flex: 40%;
+            /* background-color: #f1f1f1; */
+            /* background: rgba(0, 0, 0, 0.1); */
+            background-color: #f1f1f155;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .fon_c {
+            flex: 80%;
+            /* background-color: #f1f1f1; */
+            background: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .fix {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .top {
+                padding: 10px;
+                display: inline-block;
+                position: -webkit-sticky;
+                /* Safari */
+                position: sticky;
+                top: 0;
+                background: rgba(0, 0, 0, 0.1);
+                -webkit-backdrop-filter: blur(66px);
+                backdrop-filter: blur(66px);
+            }
+
+            .top p {
+                display: none;
+            }
+
+            .fon {
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .my3 {
+                /* margin: 60px; */
+                flex: 100%;
+                /* background-color: white; */
+                /* padding: 20px;
+                padding-top: 10px;
+                margin: 10px; */
+            }
+
+            .my2 {
+                width: 90%;
+                margin: 0 auto;
+                padding: 30px;
+                margin-top: 20px;
+                /* margin: 10px; */
+                flex-direction: column;
+            }
+            .hjvideo{
+                width: 100%;
+            }
+
+
+
+        }
+
+        @media screen and (min-width:701px) {
+            .top div {
+                display: none;
+            }
+        }
+
+
+        .bom li:hover {
+            transition: all 1s ease 0s;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .imgs:hover {
+            opacity: 0.7;
+        }
+
+    </style>
+    <script>
+        var a = false;
+        function fn() {
+            if (a) {
+                document.getElementById('ChildMenu').style.display = "none";
+                a = false;
+            }
+            else {
+                document.getElementById('ChildMenu').style.display = "block";
+                a = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--Main-->
+    <div>
+        <div class="top">
+            <h1 style="display: inline-block;" id="dede">环境责任</h1>
+            <p id="Z6">世界卫生组织：人类80%的疾病与水污染有关</p>
+            <div onclick="fn()"
+                style="height: 35px; width: 35px; border-radius: 255px; background-color: rgb(138, 43, 226,0.1); float: right;">
+            </div>
+        </div>
+        <ul id="ChildMenu" class="nav" style="list-style-type: none;">
+            <li><a id="Z1" href="" class="active" style="text-decoration: overline solid #fff;">环境保护</a></li>
+            <li><a id="Z4" href="">加入我们</a></li>
+            <!-- <li class="lg">
+                <a id="Z5" href="">Language</a>
+                <div class="Language">
+                    <a href="#" onclick="fn2()">中文</a>
+                    <a href="#">藏文</a>
+                    <a href="#" onclick="fn3()">English</a>
+                </div>
+            </li> -->
+        </ul>
+
+        <div class="fix">
+            <!-- svg#bba4ff -->
+            <div class="my2">
+                <div style="padding-top: 20px;">
+                    <h3>我们的环境责任</h3>
+                    <p>ps：视频内素材 图片素材来源与网络 视频素材来源于自拍摄，不代表任何立场，仅作为学习使用，未经允许 严禁转载</p>
+                </div>
+                <div style="padding-top: 50px;">
+                    <video class="hjvideo" style="margin: 0 auto;" controls="controls" width="70%" src="video/hjbh.mp4"></video>
+                    <p>2021年11月2日 最后编辑.</p>
+                </div>
+            </div>
+            <div class="my2" style="width: 100%; position: absolute; right: 0; background: none;">
+                <marquee behavior="scroll" scrollamount="13">环境是我们所有人共同的责任</marquee>
+                <marquee behavior="scroll" scrollamount="8" scrolldelay="30" loop="1">我们污染了环境</marquee>
+                <MARQUEE style="color: coral; padding-top: 30px;" DIRECTION=RIGHT BEHAVIOR=SCROLL SCROLLAMOUNT=10 SCROLLDELAY=200>这是我们的家园。</MARQUEE>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="fon">
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">交流与反馈</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>社区</li>
+                <li>论坛</li>
+                <li>帮助</li>
+            </ul>
+        </div>
+        <!-- <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">周边</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li><a href="store.html">商店</a></li>
+                <li>购买</li>
+                <li></li>
+            </ul>
+        </div> -->
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">隐私</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>Cookies</li>
+                <li>法律声明</li>
+                <li>请勿出售我的信息</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">支持我们</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>分享到社交平台</li>
+                <li>捐赠</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fon_c">
+            <p style="margin-left: 10px;">Copyright © 2021
+                <a style="text-decoration: none; color: rgb(70, 133, 172); .color: lightgray;" href="index(2).html">
+                    TT Inc.</a>
+                保留所有权利。
+            </p>
+        </div>
+        <div class="fon_c">
+            <p>hello world.</p>
+        </div>
+        <div class="fon_c">
+            此网站仅作为学习交流，不代表任何政治立场，内容均来源于网络，侵权请联系删除（1946388916@qq.com）
+            </p>
+        </div>
+        <div class="fon_c" style="text-align: center;">
+            <img width="50" src="GitHub.png" />
+            <h1>
+                代码托管于GitHub
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>
