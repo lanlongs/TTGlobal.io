@@ -1,0 +1,81 @@
+/* 最大宽度在700px 进行显示 */
+@media screen and (max-width: 700px) {
+
+    .fix {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .top {
+        padding: 10px;
+        display: inline-block;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+        background: rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(66px);
+        backdrop-filter: blur(66px);
+    }
+
+    .top p {
+        display: none;
+    }
+
+    .fon {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .fix2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .my3 {
+        /* margin: 60px; */
+        flex: 100%;
+        /* background-color: white; */
+        /* padding: 20px;
+        padding-top: 10px;
+        margin: 10px; */
+    }
+
+    .mmcc {
+        flex: 100%;
+        /* background: rgb(136, 90, 29); */
+
+    }
+
+    .my2 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px;
+        margin-top: 20px;
+        /* margin: 10px; */
+        flex-direction: column;
+    }
+
+    .fix_c {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .fix_c_1 {
+        width: 100%;
+    }
+
+
+
+}

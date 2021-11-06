@@ -1,0 +1,219 @@
+*,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 背景 固定位置 */
+        body {
+            background: url(../img/index.jpg) no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        /* safari浏览器背景 固定位置 */
+        body::before {
+            content: '';
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../img/index.jpg) center 0 no-repeat;
+            background-size: cover;
+        }
+
+        /* 头部块元素菜单，配合相应 */
+        .nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-backdrop-filter: blur(66px);
+            backdrop-filter: blur(66px);
+        }
+
+        .nav li {
+            font-size: 20px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            display: block;
+            padding: 16px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .nav li a:hover {
+            background: #888;
+            color: darkorange;
+            text-decoration: underline solid #fff;
+            transform: translate(0,10px);
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+        }
+
+        /* nav li a 默认显示 */
+        .active {
+            background: #888;
+            color: darkorange;
+        }
+
+        /* 语言嵌套选择 */
+        .Language {
+            display: none;
+            position: absolute;
+            /* background-color: #f9f9f9; */
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .Language a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+        .lg:hover .Language {
+            display: block;
+        }
+
+        /* logo显示或者页面介绍 也是nav的总头 */
+        .top {
+            width: 100%;
+            /* background-color: bisque; */
+            /* background-image: linear-gradient(to right, #ffff9d, #beeb9f, #79bd8f); */
+            padding: 60px;
+            /* height: 160px; */
+            text-align: center;
+        }
+
+        /* 主界面flex弹性盒子布局 */
+        .fix {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+            /* background: cornflowerblue; */
+        }
+        /* 次主页面 */
+        .fix2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* 运行在主页面下的盒子 */
+        .my1 {
+            /* margin: 60px; */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 10px;
+        }
+        /* 运行在主页面下的盒子 */
+        .my2 {
+            /* margin: 60px; */
+            flex: 60%;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* 运行在次主页面下的盒子 */
+        .my3 {
+            /* margin: 60px; */
+            flex: 30%;
+            /* background-color: rgba(0, 0, 0, 0.01); */
+            padding: 20px;
+            padding-top: 10px;
+            margin: 10px;
+        }
+
+
+        .my3 div {
+            box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: 0.4s;
+            border-radius: 40px;
+            text-align: center;
+            padding: 80px;
+            color: seashell;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+        }
+
+        .my3 div:hover {
+            transition: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        }
+        /* 图片控件的初始 */
+        .imgs {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 底部区域 */
+        .fon {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .fon a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .fon_t {
+            flex: 40%;
+            /* background-color: #f1f1f1; */
+            /* background: rgba(0, 0, 0, 0.1); */
+            background-color: #f1f1f155;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .fon_c {
+            flex: 80%;
+            /* background-color: #f1f1f1; */
+            background: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .bom li:hover {
+            transition: all 1s ease 0s;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .imgs:hover {
+            opacity: 0.7;
+        }
+
+
+        .mmcc {
+            flex: 45%;
+            /* background: rgb(167, 167, 29); */
+        }

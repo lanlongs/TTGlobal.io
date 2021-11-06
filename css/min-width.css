@@ -1,0 +1,16 @@
+/* 最小宽度701px 显示 */
+@media screen and (min-width:701px) {
+    .top div {
+        display: none;
+    }
+
+    .fix_c {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        /* flex-shrink: 1; */
+        /* flex-direction: column; */
+    }
+}
