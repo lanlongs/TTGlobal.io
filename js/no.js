@@ -6,6 +6,7 @@ window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
     window.event.returnValue = false;
     }
 }
+/*
 var threshold = 160; // 打开控制台的宽或高阈值
 // 每秒检查一次
 var check = setInterval(function() {
@@ -15,3 +16,4 @@ var check = setInterval(function() {
         window.location.reload();
     }
 }, 1000);
+*/
