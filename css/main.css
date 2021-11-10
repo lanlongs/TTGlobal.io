@@ -59,9 +59,9 @@
             background: #888;
             color: darkorange;
             text-decoration: underline solid #fff;
-            transform: translate(0,10px);
+            transform: translate(0,5px);
             transition-property: transform;
-            transition-duration: 2s;
+            transition-duration: 0.8s;
             transition-timing-function: ease;
         }
 
@@ -138,6 +138,9 @@
             display: flex;
             flex-wrap: wrap;
         }
+        .my2_1{
+            flex: 50%;
+        }
         /* 运行在次主页面下的盒子 */
         .my3 {
             /* margin: 60px; */
@@ -203,8 +206,12 @@
         }
 
         .bom li:hover {
-            transition: all 1s ease 0s;
-            font-size: 20px;
+            /* transition: all 1s ease 0s;
+            font-size: 20px; */
+            transform: scale(1.05,1.1);
+            transition-property: transform;
+            transition-duration: 0.8s;
+            transition-timing-function: ease;
             cursor: pointer;
         }
 
@@ -216,4 +223,36 @@
         .mmcc {
             flex: 45%;
             /* background: rgb(167, 167, 29); */
+        }
+
+        /* button按钮的样式 */
+        .buttons {
+            width: 180px;
+            height: 50px;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 50px;
+            background: #47c5ff;
+            border: 1px solid thistle;
+            cursor: pointer;
+            color: whitesmoke;
+            -moz-user-select: -moz-none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            transition: background 1.5s;
+            -moz-transition: background 1.5s;
+            /* Firefox 4 */
+            -webkit-transition: background 1.5s;
+            /* Safari and Chrome */
+            -o-transition: background 1.5s;
+            /* Opera */
+            display: inline-block;
+        }
+        .buttons:hover{
+            background:red;
+            color: wheat;
         }

@@ -1,8 +1,5 @@
-@media (prefers-color-scheme: light) {
-  body {
-    filter: grayscale(0);
-  }
-  .fon_t{
-    background-color: #f1f1f155;
-  }
+@media (prefers-color-scheme: light){
+    body{
+        filter: grayscale(0);
+    }
 }

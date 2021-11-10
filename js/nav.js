@@ -32,3 +32,7 @@ var a = false;
         //     var txt = "" + w + "" + h;
         //     document.getElementById("dede").innerHTML = txt;
         // }
+
+        if (window.matchMedia('(prefers-color-scheme)').media !== 'not all'){
+            console.log('浏览器支持dark模式！');
+        }
