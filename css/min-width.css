@@ -1,6 +1,6 @@
 /* 最小宽度701px 显示 */
 @media screen and (min-width:701px) {
-    .top div {
+    .top label {
         display: none;
     }
 

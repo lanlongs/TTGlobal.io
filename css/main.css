@@ -3,6 +3,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         /* 背景 固定位置 */
@@ -54,6 +55,7 @@
             padding: 16px;
             -webkit-transition: 0.5s;
             transition: 0.5s;
+            text-transform: uppercase;
         }
 
         .nav li a:hover {
