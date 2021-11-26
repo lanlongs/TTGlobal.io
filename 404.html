@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>404 not found</title>
     <link rel="stylesheet" href="404/css/style.css">
     <link rel="stylesheet" href="404/css/main.css">
-    <script src="js/nav.js" type="text/javascript"></script>
-    </script>
+    <link rel="stylesheet" href="css/copyright.css">
+    <script src="js/404_not.js"></script>
 </head>
+
 <body>
     <main>
         <header>
@@ -19,30 +21,63 @@
                     <li><a href="">文档</a></li>
                 </ul>
             </nav>
-        </header><hr>
+        </header>
+        <hr>
         <div class="main">
             <h1>HELLO.</h1>
             <h2><code>404 not found</code></h2>
             <p>我们遇到了问题，这个网页好像消失了<span class="text_Style_">会很快恢复</span>
             </p>
             <p>
-                过一会再来吧，我们正在努力维修。当然你可以访问主页面<span class="text_StyleButton"><a style="color: black;" href="index.html">打开主页</a></span>
+                过一会再来吧，我们正在努力维修。当然你可以访问主页面<span class="text_StyleButton"><a style="color: black;"
+                        href="index.html">打开主页</a></span>
             </p>
         </div>
         <div class="flex_List">
-        <div class="list">
-            <h4 class="list_TextHd">Prompt</h4>
-            <ul>
-                <li><a href="#" onclick="fn()">为什么页面会消失？</a></li>
-                <li id="ChildMenu" style="display: none">
-                  <ol>
-                    <li>文档未被找到，或文档已消失</li>
-                  </ol>
-                </li>
-                <li><a href="">恢复服务需要多久？</a></li>
-            </ul>
+            <div class="list">
+                <h4 class="list_TextHd">Prompt</h4>
+                <ul>
+                    <li><a onclick="fn()" href="#">为什么页面会消失？</a></li>
+                    <li id="B" style="display: none;">
+                        <ol>
+                            <li>文档更名，文档消失都可能会造成打不开页面</li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li><a onclick="fn2()" href="#">恢复服务需要多久？</a></li>
+                    <li id="B2" style="display: none;">
+                        <ol>
+                            <li>我们需要排查问题，以最高效的解决问题</li>
+                            <li>当然你可以访问我们的<span class="text_StyleButton">状态信息</span>页面，以查看我们的状态</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
-        </main>
+        <footer>
+            <div class="copyright">
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list"></div>
+            </div>
+            <div style="color: #969696; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Copyright © 2021 TT Inc. 保留所有权利。
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

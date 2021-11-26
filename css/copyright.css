@@ -1,0 +1,17 @@
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    background: snow;
+}
+.copyright_list{
+    flex: 25%;
+}
+.copyright_list ul>li{
+    color: skyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.copyright_list ol>li{
+    color: skyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+}
