@@ -7,6 +7,8 @@
     <title>404 not found</title>
     <link rel="stylesheet" href="404/css/style.css">
     <link rel="stylesheet" href="404/css/main.css">
+    <script src="js/nav.js" type="text/javascript"></script>
+    </script>
 </head>
 <body>
     <main>
@@ -31,7 +33,12 @@
         <div class="list">
             <h4 class="list_TextHd">Prompt</h4>
             <ul>
-                <li><a href="">为什么页面会消失？</a></li>
+                <li><a href="#" onclick="fn()">为什么页面会消失？</a></li>
+                <li id="ChildMenu" style="display: none">
+                  <ol>
+                    <li>文档未被找到，或文档已消失</li>
+                  </ol>
+                </li>
                 <li><a href="">恢复服务需要多久？</a></li>
             </ul>
         </div>
