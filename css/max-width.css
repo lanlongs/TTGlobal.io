@@ -10,8 +10,8 @@
     .nav {
         /* display: none; */
         position: fixed;
-        width: 100%;
-        
+        /*width: 100%;
+        height: 100vh;*/
         top: -100%;
         transition: all .5s;
     }
@@ -52,7 +52,12 @@
 
     .my3 {
         /* margin: 60px; */
-        flex: 100%;
+        width: 90%;
+        margin: 0 auto;
+        /* background: yellowgreen; */
+        /* padding: 20px; */
+        margin-top: 10px;
+        /* margin: 10px; */
         /* background-color: white; */
         /* padding: 20px;
         padding-top: 10px;
