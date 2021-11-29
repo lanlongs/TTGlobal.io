@@ -67,6 +67,13 @@
             transition-duration: 0.8s;
             transition-timing-function: ease;
         }
+        
+        .fun>span{
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 1px solid #eee;
+    }
 
         /* nav li a 默认显示 */
         .active {

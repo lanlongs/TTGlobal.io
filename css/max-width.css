@@ -16,13 +16,6 @@
         transition: all .5s;
     }
 
-    .fun>span{
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 1px solid #eee;
-    }
-
     #van:checked ~ ul{
         top: 58px;
     }
