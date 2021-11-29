@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="msapplication-TileColor" content="#000"/>
     <meta name="theme-color" content="#0a1992">
     <meta name="theme-color" content="#1972F8" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#1C4D98" media="(prefers-color-scheme: dark)">-->
+    <meta name="theme-color" content="#1C4D98" media="(prefers-color-scheme: dark)"> -->
     <title>TT Global</title>
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="css/code.css"> -->
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" type="text/javascript" href="css/light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" type="text/javascript" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" type="text/javascript" href="css/light.css" media="prefers-color-scheme: light">
+    <link rel="stylesheet" type="text/javascript" href="css/dark.css" media="prefers-color-scheme: dark">
     <link rel="stylesheet" type="text/css" href="css/max-width.css" media="screen and (max-width:700px)">
     <link rel="stylesheet" type="text/css" href="css/min-width.css" media="screen and (min-width:701px)">
     <script src="js/nav.js" type="text/javascript"></script>
@@ -36,8 +36,10 @@
         <div class="top">
             <h1 style="display: inline-block;" id="dede">TT Inc</h1>
             <p id="Z6">The sky darkened, dark clouds slowly covered the sky, and it rained for a long time</p>
-            <label for="van" style="height: 35px; width: 35px; border-radius: 255px; background-color: rgb(138, 43, 226,0.1); float: right;">
-                Menu
+            <label class="fun" for="van" style="height: 30px; width: 35px; float: right;">
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
         </div>
         <input style="display: none;" type="checkbox" id="van">
@@ -61,50 +63,70 @@
         <main>
             <div class="fix">
                 <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #ff11112f;"></div>
-                    <div>
-                        <p>CSS3</p>
+                    <div class="my3_div_img">30</div>
+                    <div class="my3_div_tab">
+                        <p>CSS</p>
                     </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 20%;">掌握程度</div>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
+                    </div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myCss"></div></div>
                 </div>
                 <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #3213922f;"></div>
-                    <div>
-                        <p>HTML5</p>
+                    <div class="my3_div_img">20</div>
+                    <div class="my3_div_tab">
+                        <p>HTML</p>
                     </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 20%;">掌握程度</div>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
+                    </div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myHtml"></div></div>
                 </div>
                 <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #00ff552f;"></div>
-                    <div>
+                    <div class="my3_div_img">5</div>
+                    <div class="my3_div_tab">
                         <p>JAVASCRIPT</p>
                     </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 20%;">掌握程度</div>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
+                    </div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myJavaScript"></div></div>
                 </div>
                 <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #ff11112f;"></div>
-                    <div>
+                    <div class="my3_div_img">0</div>
+                    <div class="my3_div_tab">
+                        <p>TYPESCRIPT</p>
+                    </div>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
+                    </div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myTypeScript"></div></div>
+                </div>
+                <div class="my3">
+                    <div class="my3_div_img">3</div>
+                    <div class="my3_div_tab">
+                        <p>MYSQL</p>
+                    </div>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
+                    </div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myMySql"></div></div>
+                </div>
+                <div class="my3">
+                    <div class="my3_div_img">15</div>
+                    <div class="my3_div_tab">
                         <p>C</p>
                     </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 1%;">掌握程度</div>
-                </div>
-                <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #3213922f;"></div>
-                    <div>
-                        <p>PYTHON</p>
+                    <div class="my3_div_text">
+                        <p>掌握程度</p>
                     </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 1%;">掌握程度</div>
-                </div>
-                <div class="my3">
-                    <div class="my3_div_img" style="width: 80px; height: 80px; border-radius: 4px; background: #00ff552f;"></div>
-                    <div>
-                        <p>VUE.JS</p>
-                    </div>
-                    <div style="border-bottom: 5px solid #1c98eb6f; max-width: 1%;">掌握程度</div>
+                    <div class="my3_div_wid"><div class="my3_div_div_wid myC"></div></div>
                 </div>
             </div>
             <div class="fix">
-                
+                <div class="my3">
+                    HELLO.
+                </div>
             </div>
         </main>
 

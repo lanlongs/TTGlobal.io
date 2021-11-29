@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --text: #ebeeeb;
+            --fontsize: 10;
+        }
+
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--text, #ffffff);
+            font-size: calc(var(--fontsize) * .1rem);
+        }
+
+        #box {
+            margin: 10px;
+            width: calc(100% - 20px);
+            background: whitesmoke;
+        }
+
+        .main {
+            display: inline-block;
+            /* height: 200px;min-height: 100px; */
+        }
+
+        .main:nth-child(1),
+        .main:nth-child(2),
+        .main:nth-child(5) {
+            height: 50px;
+            min-height: 50px;
+            padding: 10px;
+            width: calc(100% - 20px);
+        }
+
+        .main:nth-child(3),
+        .main:nth-child(4) {
+            height: 120px;
+            min-height: 80px;
+        }
+
+        .main:nth-child(1) {
+            background: cornflowerblue;
+        }
+
+        .main:nth-child(2) {
+            background: darkgoldenrod;
+        }
+
+        .main:nth-child(3) {
+            background: darkorange;
+            padding: 10px;
+            width: calc(30% - 20px);
+            float: left;
+        }
+
+        .main:nth-child(4) {
+            background: darkorchid;
+            padding: 10px;
+            width: calc(70% - 20px);
+        }
+
+        .main:nth-child(5) {
+            background: darksalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="box">
+            <div class="main">#main</div>
+            <div class="main">#top</div>
+            <div class="main">#left</div>
+            <div class="main">#right</div>
+            <div class="main">#footer</div>
+        </div>
+    </main>
+    <footer>
+        <div style="background: darkseagreen;">
+            <p style="margin-left: 10px; color: dimgrey;">Copyright © 2021
+                <a style="text-decoration: none; color: rgb(70, 133, 172); .color: lightgray;" href="index(2).html">
+                    TT Inc.</a>
+                保留所有权利。
+            </p>
+            <p style="margin-left: 10px;">
+                我们对于探索<span class="text_Style2">永无止境</span>，热衷于<span class="text_Style">创造</span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

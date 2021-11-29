@@ -155,7 +155,57 @@
             background: #ffffff2f;
             border-radius: 4px;
         }
-
+        .my3_div_img {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 40px;
+            color: plum;
+            background: #0e8797;
+            font-weight: bold;
+        }
+        /* .my3_div_img:nth-child(1){
+            background: #ff11112f;
+        }
+        .my3_div_img:nth-child(2){
+            background: #0320322f;
+        }
+        .my3_div_img:nth-child(3){
+            background: #fc90342f;
+        } */
+        .my3_div_tab {
+            color: tomato;
+        }
+        .my3_div_text {
+            color: rgb(26, 88, 221);
+        }
+        .my3_div_wid {
+            width: 100%;
+            background: #0951ec41;
+        }
+        .my3_div_div_wid {
+            border-bottom: 5px solid #1c98eb6f;
+            max-width: 30%;
+        }
+        .myCss {
+            width: 30%;
+        }
+        .myHtml {
+            width: 20%;
+        }
+        .myJavaScript {
+            width: 5%;
+        }
+        .myTypeScript {
+            width: 0%;
+        }
+        .myMySql {
+            width: 3%;
+        }
+        .myC {
+            width: 15%;
+        }
 
         /* .my3 div {
             box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
