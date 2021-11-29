@@ -318,3 +318,19 @@
             background:red;
             color: wheat;
         }
+        .cen{
+            text-align: center;
+        }
+        .my3_aButton {
+            background: #0a98da;
+            border-radius: 3px;
+            padding: 16px;
+            text-decoration: none;
+            color: white;
+        }
+        .my3_aButton.active,
+        .my3_aButton:hover {
+            /* background: #1b9bff; */
+            background: #000;
+            transition: 1.5s ease;
+        }
