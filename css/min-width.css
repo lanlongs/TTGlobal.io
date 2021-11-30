@@ -13,4 +13,9 @@
         /* flex-shrink: 1; */
         /* flex-direction: column; */
     }
+    
+    .fmusic {
+      margin-left: 10%;
+      width: calc(100% - 20%);
+    }
 }
