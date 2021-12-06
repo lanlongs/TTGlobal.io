@@ -112,6 +112,7 @@
             padding: 60px;
             /* height: 160px; */
             text-align: center;
+            z-index: 5;
         }
 
         /* 主界面flex弹性盒子布局 */
