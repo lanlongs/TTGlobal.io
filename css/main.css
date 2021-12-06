@@ -8,7 +8,7 @@
 
         /* 背景 固定位置 */
         body {
-            background: url(../img/index.jpg) no-repeat;
+            background: url(../img/index1.JPG) no-repeat;
             background-size: 100% 100%;
             background-attachment: fixed;
             background-position: center;
@@ -22,7 +22,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: url(../img/index.jpg) center 0 no-repeat;
+            background: url(../img/index1.JPG) center 0 no-repeat;
             background-size: cover;
         }
 
