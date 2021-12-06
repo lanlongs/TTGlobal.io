@@ -163,7 +163,6 @@
             border-radius: 4px;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            z-index: -1;
         }
         .my3_div_img {
             width: 40px;
