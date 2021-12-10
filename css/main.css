@@ -67,6 +67,11 @@
             transition-duration: 0.8s;
             transition-timing-function: ease;
         }
+        .fun{
+          position: fixed;
+          top: 16px;
+          right: 0;
+        }
         
         .fun>span{
         display: block;
