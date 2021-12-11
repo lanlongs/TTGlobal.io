@@ -275,6 +275,8 @@
             background-color: #f1f1f155;
             padding: 20px;
             margin: 5px;
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px)
         }
 
         .fon_c {
@@ -283,6 +285,8 @@
             background: rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin: 10px;
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px)
         }
 
         .bom li:hover {
