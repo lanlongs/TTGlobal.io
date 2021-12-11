@@ -56,11 +56,16 @@
             -webkit-transition: 0.5s;
             transition: 0.5s;
             text-transform: uppercase;
+            color: white;
         }
 
         .nav li a:hover {
-            background: #888;
-            color: darkorange;
+            /*background: #888;*/
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-backdrop-filter: blur(66px);
+            backdrop-filter: blur(66px);
+            /*color: darkorange;*/
+            color: #0082e6;
             text-decoration: underline solid #fff;
             transform: translate(0,5px);
             transition-property: transform;
@@ -83,8 +88,12 @@
 
         /* nav li a 默认显示 */
         .active {
-            background: #888;
-            color: darkorange;
+            /*background: #888;*/
+            color: #0082e6 !important;
+            background: rgba(0, 0, 0, 0.1);
+            -webkit-backdrop-filter: blur(66px);
+            backdrop-filter: blur(66px);
+            /*color: darkorange;*/
         }
 
         /* 语言嵌套选择 */
