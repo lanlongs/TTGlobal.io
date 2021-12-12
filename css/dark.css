@@ -2,6 +2,6 @@
     *,body{
         .filter: grayscale(10);
         background: #000000 !important;
-        color: #fff !important;
+        color: #fff;
     }
 }
