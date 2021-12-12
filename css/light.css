@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light){
     body{
-        filter: grayscale(0);
+        .filter: grayscale(0);
     }
 }

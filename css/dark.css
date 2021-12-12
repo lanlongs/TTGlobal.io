@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark){
     body{
-        filter: grayscale(10);
+        .filter: grayscale(10);
         color: #fff;
     }
 }
