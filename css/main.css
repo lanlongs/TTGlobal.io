@@ -380,4 +380,7 @@
                 width: 100%;
                 color: white;
                 padding: 10px;
+                background: #ffffff2f;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
               }
