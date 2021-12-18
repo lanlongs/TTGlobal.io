@@ -378,9 +378,11 @@
                 bottom: 0;
                 .background: black;
                 width: 100%;
-                color: white;
+                .color: white;
+                color: #A74EC4;
                 padding: 10px;
-                background: #ffffff2f;
+                background: #80393f2f;
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
+                opacity: 1.5;
               }
