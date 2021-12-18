@@ -376,7 +376,7 @@
               .cookies {
                 position: fixed;
                 bottom: 0;
-                background: black;
+                .background: black;
                 width: 100%;
                 color: white;
                 padding: 10px;
