@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买</title>
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="404/css/style.css">
+    <link rel="stylesheet" href="404/css/main.css">
+    <link rel="stylesheet" href="css/copyright.css">
+    <script src="js/404_not.js"></script>
+      <style type="text/css" media="all">
+    /* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+
+
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #09161d;
+    }
+
+    .zb{
+      width: 100%;
+      text-align: center;
+    }
+
+    .card {
+      position: relative;
+      width: 320px;
+      height: 420px;
+      background: #122936;
+      border-radius: 20px;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      width: 100%;
+      height: 100%;
+      background: #2196f3;
+      transform: skewY(345deg);
+      transition: 0.5s;
+    }
+
+    .card:hover::before {
+      transform: skewY(390deg);
+    }
+
+    .card::after {
+      content: 'Phillips';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-weight: 600;
+      font-size: 8em;
+      color: rgba(0, 0, 0, 0.1);
+    }
+
+    .card .imgBox {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .card .imgBox img {
+      max-width: 12rem;
+      height: auto;
+      transition: 0.5s;
+    }
+
+    .card:hover .imgBox img {
+      max-width: 9rem;
+      height: 100%;
+    }
+
+    .card .contentBox {
+      position: relative;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .card .contentBox h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card .contentBox .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card .contentBox .buy {
+      top: 200px;
+      opacity: 0;
+      position: relative;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #2196f3;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s;
+    }
+
+    .card:hover .contentBox .buy {
+      top: 0;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div class="main">
+            <main>
+    <div class="zb">
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBox">
+          <img src="https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png">
+        </div>
+        <div class="contentBox">
+          <h3>Wireless Headphones</h3>
+          <h2 class="price">$40.<small>99</small></h2>
+          <a href="javascript:none" class="buy">Buy Now</a>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </main>
+        </div>
+        <div class="flex_List" style="display: none;">
+            <div class="list">
+                <h4 class="list_TextHd">Prompt</h4>
+                <ul>
+                    <li><a onclick="fn()" href="#">为什么页面会消失？</a></li>
+                    <li id="B" style="display: none;">
+                        <ol>
+                            <li>文档更名，文档消失都可能会造成打不开页面</li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li><a onclick="fn2()" href="#">恢复服务需要多久？</a></li>
+                    <li id="B2" style="display: none;">
+                        <ol>
+                            <li>我们需要排查问题，以最高效的解决问题</li>
+                            <li>当然你可以访问我们的<span class="text_StyleButton">状态信息</span>页面，以查看我们的状态</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="copyright">
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="copyright_list"></div>
+            </div>
+            <div style="color: #969696; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Copyright © 2021 TT Inc. 保留所有权利。
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
