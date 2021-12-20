@@ -8,12 +8,13 @@ main{
     align-content: flex-start;
 }
 .box{
-    width: 21.5rem;
-    height: 21.5rem;
+    min-width: 21.5rem;
+    min-height: 21.5rem;
     background: cornflowerblue;
     flex: auto 1 1;
     margin: 4px;
     text-align: center;
+    padding: 30px;
 }
 @media (max-width: 858px) {
     main{
