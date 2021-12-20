@@ -2,4 +2,23 @@
     body{
         .filter: grayscale(0);
     }
+    body {
+      background: url(../img/IMG_3388.JPG) no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    
+    /* safari浏览器背景 固定位置 */
+    body::before {
+      content: '';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../img/IMG_3388.JPG) center 0 no-repeat;
+      background-size: cover;
+    }
 }
