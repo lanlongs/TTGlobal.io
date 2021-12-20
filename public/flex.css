@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.box{
+    width: 21.5rem;
+    height: 21.5rem;
+    background: cornflowerblue;
+    flex: auto 1 1;
+    margin: 4px;
+    text-align: center;
+}
+@media (max-width: 858px) {
+    main{
+        
+    }
+    .box{
+        width: 100%;
+    }
+}
