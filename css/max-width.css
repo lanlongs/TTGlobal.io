@@ -19,6 +19,8 @@
     
     #van:checked ~ ul{
         top: 58px;
+        /*transform: translateY(-0%);*/
+        transition: .7s cubic-bezier(0.81, 0.02, 0.1, 1.43);
     }
 
     .top {
