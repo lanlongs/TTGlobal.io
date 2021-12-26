@@ -7,7 +7,8 @@
 }
 
 nav {
-    background: linear-gradient(to right,#fef,#00d7e6,#0082e6);
+    /* background: linear-gradient(to right,#fef,#00d7e6,#0082e6); */
+    background: cornflowerblue;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -89,7 +90,8 @@ label.logo {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(to top,#f8b705,#0ad8df);
+        /* background: linear-gradient(to top,#f8b705,#0ad8df); */
+        background: cornflowerblue;
         backdrop-filter: blur(100px);
         top: 80px;
         left: -100%;

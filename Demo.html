@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" type="text/css" href="css/max-width.css" media="screen and (max-width:700px)">
+    <link rel="stylesheet" type="text/css" href="css/min-width.css" media="screen and (min-width:701px)">
+    <script src="js/nav.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <iframe src="*.htm"></iframe>
+    </noscript>
+    <!--Main-->
+    <div>
+        <div class="top">
+            <h1 style="display: inline-block;" id="dede">Demo</h1>
+            <p id="Z6">The sky darkened, dark clouds slowly covered the sky, and it rained for a long time</p>
+            <label class="fun" for="van" style="height: 30px; width: 35px; float: right;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input style="display: none;" type="checkbox" id="van">
+        <ul id="ChildMenu" class="nav" style="list-style-type: none;">
+            <li><a id="Z1" href="index.html">Home page</a></li>
+            <li><a id="Z2" href="Demo.html" class="active" style="text-decoration: overline solid #fff;">Demo</a></li>
+            <li><a id="Z3" href="About.html">About</a></li>
+            <li><a id="Z4" href="Setup.html">Set up</a></li>
+            <li class="lg">
+                <a id="Z5" href="#">Language</a>
+                <div class="Language">
+                    <a href="#" onclick="fn2()">中文</a>
+                    <a href="#">藏文</a>
+                    <a href="#" onclick="fn3()">English</a>
+                </div>
+            </li>
+        </ul>
+
+
+        <!-- 主要区域main -->
+        <main>
+            <div class="fix">
+                <div class="my3 cen">
+                    <video style="margin: 0 auto;" controls="controls" width="90%"
+                        src="video/50f4dfc5a7144578bd408da105c53949.MP4"></video>
+                </div>
+                <div class="my3 cen">
+                    <video style="margin: 0 auto;" controls="controls" width="90%"
+                        src="video/ac75acd8ebd74c95bbee923e13a98fdb.MP4"></video>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="fon">
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">责任与价值</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>环境保护</li>
+                <li>非营利组织</li>
+                <li>价值观</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">交流与反馈</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>社区</li>
+                <li>论坛</li>
+                <li>帮助</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">周边</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li><a href="store.html">商店</a></li>
+                <li><a href="buy.html">购买</a></li>
+                <li>设备</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">隐私</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li><a href="cookies.html">Cookies</a></li>
+                <li><a href="law.html">法律声明</a></li>
+                <li>请勿出售我的个人信息</li>
+            </ul>
+        </div>
+        <div class="fon_t">
+            <p style="padding-bottom: 10px; font-weight: bold;">支持我们</p>
+            <ul style="list-style-type: none;" class="bom">
+                <li>分享到社交平台</li>
+                <li><a href="donate.html">捐赠</a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fon_c">
+            <p style="margin-left: 10px;">Copyright © 2021
+                <a style="text-decoration: none; color: rgb(70, 133, 172); .color: lightgray;" href="index(2).html">
+                    TT Inc.</a>
+                保留所有权利。
+            </p>
+        </div>
+        <div class="fon_c">
+            此网站仅作为学习交流，不代表任何政治立场，内容均来源于网络，侵权请联系删除（1946388916@qq.com）
+            </p>
+        </div>
+        <div class="fon_c" style="text-align: center;">
+            <img width="50" src="img/GitHub.png" />
+            <h1>
+                代码托管于GitHub
+            </h1>
+        </div>
+    </div>
+    <div class="cookies" id="cookie">
+        <div style="display: inline-block; padding: 10px 5px;">We use cookies to improve your experience and for
+            analytics. Learn more in our <a href="#">cookie
+                policy.</a></div>
+        <div style="display: inline-block; padding: 10px 5px;">
+            <div class="buttone">Manage cookies</div>
+            <div class="buttone">Accept all</div>
+            <div onclick="ono()" class="buttone" style="border: none;">X</div>
+        </div>
+    </div>
+</body>
+
+</html>
