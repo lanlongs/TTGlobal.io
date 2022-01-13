@@ -389,3 +389,8 @@
                 backdrop-filter: blur(10px);
                 opacity: 1.5;
               }
+              
+              .back_gif{
+                background: url(../img/IMG_1999.GIF) no-repeat;
+                background-size: cover;
+              }
