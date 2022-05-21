@@ -171,7 +171,7 @@
             flex: 50%;
         }
         .my4 {
-          flex: 100%;
+          flex: %;
         }
         /* 运行在次主页面下的盒子 */
         .my3 {
@@ -181,7 +181,8 @@
             padding: 20px;
             padding-top: 10px;
             margin: 10px;
-            background: #ffffff2f;
+            /*background: #ffffff2f;*/
+            background-image: linear-gradient(#8E90A6,#5C5D68);
             border-radius: 4px;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
