@@ -93,7 +93,8 @@
         .active {
             /*background: #888;*/
             color: #0082e6 !important;
-            background: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(to right, #D56F19, #D5D419);
+            .background: rgba(0, 0, 0, 0.1);
             -webkit-backdrop-filter: blur(66px);
             backdrop-filter: blur(66px);
             /*color: darkorange;*/
@@ -171,7 +172,7 @@
             flex: 50%;
         }
         .my4 {
-          flex: %;
+          flex: 95%;
         }
         /* 运行在次主页面下的盒子 */
         .my3 {
